@@ -141,7 +141,7 @@ var faker = require('faker');
 
 router.route('/seed/:number')
   .get(isAuthenticated, function(req, res) {
-    if(req.user[0].username === 'Pam'){
+    if(req.user[0].username === 'Belinda'){
 
       for(var i = 0; i < req.params.number; i++){
         Photo.create({
