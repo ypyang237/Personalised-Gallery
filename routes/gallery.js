@@ -146,7 +146,7 @@ router.route('/seed/:number')
       for(var i = 0; i < req.params.number; i++){
         Photo.create({
           author : faker.name.findName(),
-          link   : "https://unsplash.it/" + 500 + "/" + (350 + Math.floor( Math.random() * 100)),
+          link   : "/mum_photos/mum" + i + ".jpg",
           description : faker.lorem.paragraph(),
           UserId : req.user[0].id
         })
